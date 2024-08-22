@@ -1,0 +1,15 @@
+x-veld:
+  chain:
+
+services:
+  veld_preprocess_lowercase:
+    extends:
+      file: ./veld_code_19_amc_preprocessing/veld_preprocess_lowercase.yaml
+      service: veld_preprocess_lowercase
+    volumes:
+      - ./veld_data_18_amc_we_training_data/:/veld/input/
+      - ./veld_data_18_amc_we_training_data/:/veld/output/
+    environment:
+      input_file_path: /veld/input/data/203_vert_rftt_inhalt_nodup_uniq_stripped.txt
+      output_file_path: /veld/output/data/203_vert_rftt_inhalt_nodup_uniq_stripped_lowercased.txt
+
