@@ -1,0 +1,20 @@
+x-veld:
+  chain:
+
+services:
+  veld:
+    extends:
+      file: ./veld_code_12_fasttext/veld_train.yaml
+      service: veld_train 
+    volumes:
+      - ./test_data2.txt:/veld/input/test.txt
+      - ./out_model/:/veld/output/
+    environment:
+      in_train_data_path: /veld/input/test.txt
+      out_model_folder: /veld/output/
+      out_model_id: "m1"
+      training_architecture: "fasttext_v1_test"
+      out_metadata_path: null
+      vector_size: 100
+      epochs: 10
+
