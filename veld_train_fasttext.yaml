@@ -2,7 +2,7 @@ x-veld:
   chain:
 
 services:
-  veld:
+  veld_train_fasttext:
     extends:
       file: ./veld_code_12_fasttext/veld_train.yaml
       service: veld_train 
