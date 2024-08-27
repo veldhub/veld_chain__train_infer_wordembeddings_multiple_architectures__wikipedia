@@ -1,0 +1,18 @@
+x-veld:
+  chain:
+
+services:
+  veld_train_word2vec:
+    extends:
+      file: ./veld_code_13_word2vec/veld_train.yaml
+      service: veld_train 
+    volumes:
+      - ./veld_data_18_amc_we_training_data/data/test/:/veld/input/:z
+      - ./veld_data_11_word2vec_models/data/test/:/veld/output/:z
+    environment:
+      in_train_data_file: test.txt
+      out_model_file: test.bin
+      vector_size: 500
+      window: 5
+      min_count: 5
+
