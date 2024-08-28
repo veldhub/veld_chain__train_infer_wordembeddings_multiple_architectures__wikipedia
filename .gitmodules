@@ -22,3 +22,6 @@
 [submodule "veld_data_11_word2vec_models"]
 	path = veld_data_11_word2vec_models
 	url = https://gitlab.oeaw.ac.at/acdh-ch/nlp/veld_data_11_word2vec_models.git
+[submodule "veld_data_10_we_evaluation"]
+	path = veld_data_10_we_evaluation
+	url = https://github.com/acdh-oeaw/veld_data_10_we_evaluation.git
