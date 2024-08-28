@@ -1,0 +1,12 @@
+x-veld:
+  chain:
+
+services:
+  veld_jupyter_notebook_word2vec:
+    extends:
+      file: ./veld_code_13_word2vec/veld_jupyter_notebook.yaml
+      service: veld_jupyter_notebook
+    volumes:
+      - ./veld_data_18_amc_we_training_data/:/veld/data/veld_data_18_amc_we_training_data:z
+      - ./veld_data_11_word2vec_models/:/veld/data/veld_data_11_word2vec_models:z
+
