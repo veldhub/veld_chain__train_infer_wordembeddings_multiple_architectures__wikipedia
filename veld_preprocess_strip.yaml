@@ -7,11 +7,11 @@ services:
       file: ./veld_code_19_amc_preprocessing/veld_preprocess_strip.yaml
       service: veld_preprocess_strip
     volumes:
-      - ./veld_data_18_amc_we_training_data/:/veld/input/
-      - ./veld_data_18_amc_we_training_data/:/veld/output/
+      - ./veld_data_18_amc_we_training_data/data/nodup_uniq/:/veld/input/:z
+      - ./veld_data_18_amc_we_training_data/data/nodup_uniq_stripped/:/veld/output/:z
     environment:
-      input_file_path: /veld/input/data/203_vert_rftt_inhalt_nodup_uniq.txt
-      output_file_path: /veld/output/data/203_vert_rftt_inhalt_nodup_uniq_stripped.txt
+      in_file: "203_vert_rftt_inhalt_nodup_uniq.txt"
+      out_file: "203_vert_rftt_inhalt_nodup_uniq_stripped.txt"
       line_start: 54993
       line_end: 521781020
 
