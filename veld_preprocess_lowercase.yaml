@@ -7,9 +7,9 @@ services:
       file: ./veld_code_19_amc_preprocessing/veld_preprocess_lowercase.yaml
       service: veld_preprocess_lowercase
     volumes:
-      - ./veld_data_18_amc_we_training_data/:/veld/input/
-      - ./veld_data_18_amc_we_training_data/:/veld/output/
+      - ./veld_data_18_amc_we_training_data/data/nodup_uniq_stripped/:/veld/input/:z
+      - ./veld_data_18_amc_we_training_data/data/nodup_uniq_stripped_lowercased/:/veld/output/:z
     environment:
-      input_file_path: /veld/input/data/203_vert_rftt_inhalt_nodup_uniq_stripped.txt
-      output_file_path: /veld/output/data/203_vert_rftt_inhalt_nodup_uniq_stripped_lowercased.txt
+      in_file: "203_vert_rftt_inhalt_nodup_uniq_stripped.txt"
+      out_file: "203_vert_rftt_inhalt_nodup_uniq_stripped_lowercased.txt"
 
