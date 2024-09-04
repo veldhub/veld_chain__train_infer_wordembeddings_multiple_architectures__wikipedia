@@ -1,0 +1,16 @@
+x-veld:
+  chain:
+
+services:
+  veld_preprocess_sample:
+    extends:
+      file: ./veld_code_19_amc_preprocessing/veld_preprocess_sample.yaml
+      service: veld_preprocess_sample
+    volumes:
+      - ./veld_data_18_amc_we_training_data/data/nodup_uniq_stripped_lowercased/:/veld/input/:z
+      - ./veld_data_18_amc_we_training_data/data/nodup_uniq_stripped_lowercased_sampled/:/veld/output/:z
+    environment:
+      in_file: "203_vert_rftt_inhalt_nodup_uniq_stripped_lowercased.txt"
+      out_file: "203_vert_rftt_inhalt_nodup_uniq_stripped_lowercased_sampled.txt"
+      percentage_sample: 1
+
