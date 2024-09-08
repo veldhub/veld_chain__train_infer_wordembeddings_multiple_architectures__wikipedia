@@ -4,7 +4,7 @@ x-veld:
 services:
   veld_preprocess_download_and_extract:
     extends:
-      file: ./veld_code_20_wikipedia_we_preprocessing/veld_download_and_extract.yaml
+      file: ./veld_code_20_wikipedia_nlp_preprocessing/veld_download_and_extract.yaml
       service: veld_download_and_extract
     volumes:
       - ./data_local/training_data/extracted/:/veld/output/:z
