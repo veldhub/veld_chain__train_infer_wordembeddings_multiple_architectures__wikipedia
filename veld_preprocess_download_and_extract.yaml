@@ -9,5 +9,5 @@ services:
     volumes:
       - ./data_local/training_data/extracted/:/veld/output/:z
     environment:
-      wikipedia_dump_url: https://dumps.wikimedia.org/enwiki/latest/enwiki-latest-pages-articles.xml.bz2
+      wikipedia_dump_url: https://dumps.wikimedia.org/dewiki/latest/dewiki-latest-pages-articles.xml.bz2
 
