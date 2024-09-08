@@ -1,0 +1,14 @@
+x-veld:
+  chain:
+
+services:
+  veld_preprocess_transform_wiki_json_to_txt:
+    extends:
+      file: ./veld_code_20_wikipedia_nlp_preprocessing/veld_transform_wiki_json_to_txt.yaml
+      service: veld_transform_wiki_json_to_txt
+    volumes:
+      - ./data_local/training_data/extracted/data/:/veld/input/:z
+      - ./data_local/training_data/converted/:/veld/output/:z
+    environment:
+      out_txt_file: "de_wiki_all.txt"
+
