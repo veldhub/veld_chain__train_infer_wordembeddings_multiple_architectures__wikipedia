@@ -10,7 +10,7 @@ services:
       - ./data_local/training_data/extracted/data/:/veld/input/:z
       - ./data_local/training_data/sample_transformed/:/veld/output/:z
     environment:
-      out_txt_file: "de_wiki_all.txt"
+      out_txt_file: "de_wiki_sample.txt"
       cpu_count: 14
       sample_size_percentage: 1
       sample_random_seed: 42
