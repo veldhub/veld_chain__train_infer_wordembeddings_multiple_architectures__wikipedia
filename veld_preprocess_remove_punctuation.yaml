@@ -13,6 +13,6 @@ services:
       in_txt_file: "de_wiki_sample.txt"
       out_txt_file: "de_wiki_sample.txt"
       cpu_count: 14
-      info_interval: 100
+      info_interval: 10
       out_data_description: "german wikipedia sample punctuation removed"
 
