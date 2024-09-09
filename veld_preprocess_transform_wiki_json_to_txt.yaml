@@ -11,4 +11,8 @@ services:
       - ./data_local/training_data/transformed/:/veld/output/:z
     environment:
       out_txt_file: "de_wiki_all.txt"
+      cpu_count: 14
+      sample_size_percentage: 10
+      sample_random_seed: 42
+      info_interval: 10
 
