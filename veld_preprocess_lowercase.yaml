@@ -4,12 +4,13 @@ x-veld:
 services:
   veld_preprocess_lowercase:
     extends:
-      file: ./veld_code_19_amc_preprocessing/veld_preprocess_lowercase.yaml
+      file: ./veld_code_19_we_preprocessing/veld_preprocess_lowercase.yaml
       service: veld_preprocess_lowercase
     volumes:
       - ./data_local/training_data/sample_transformed/:/veld/input/:z
       - ./data_local/training_data/sample_transformed_lowercased/:/veld/output/:z
     environment:
-      in_file: "de_wiki_sample.txt"
-      out_file: "de_wiki_sample.txt"
+      in_txt_file: "de_wiki_sample.txt"
+      out_txt_file: "de_wiki_sample.txt"
+      out_data_description: "german wikipedia sample lowercased"
 
