@@ -8,7 +8,7 @@ services:
       service: veld_transform_wiki_json_to_txt
     volumes:
       - ./data_local/training_data/extracted/data/:/veld/input/:z
-      - ./data_local/training_data/transformed/:/veld/output/:z
+      - ./data_local/training_data/sample_transformed/:/veld/output/:z
     environment:
       out_txt_file: "de_wiki_all.txt"
       cpu_count: 14
