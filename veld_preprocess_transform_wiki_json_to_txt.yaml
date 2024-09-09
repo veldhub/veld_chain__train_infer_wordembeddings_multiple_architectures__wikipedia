@@ -12,7 +12,7 @@ services:
     environment:
       out_txt_file: "de_wiki_all.txt"
       cpu_count: 14
-      sample_size_percentage: 10
+      sample_size_percentage: 1
       sample_random_seed: 42
       info_interval: 10
 
