@@ -7,10 +7,10 @@ services:
       file: ./veld_code_17_glove/veld_train.yaml
       service: veld_train 
     volumes:
-      - ./data_local/training_data/text8/:/veld/input/:z
-      - ./data_local/models/glove/m1:/veld/output/:z
+      - ./data_local/training_data/extracted__transformed_to_txt__lowercased__removed_punctuation/:/veld/input/:z
+      - ./data_local/models/glove/m1/:/veld/output/:z
     environment:
-      in_corpus_file: "text8.txt"
+      in_corpus_file: "de_wiki_sample.txt"
       out_vocab_file: "m1_vocab.txt"
       out_cooccurrence_file: "m1_cooccurrence.bin"
       out_cooccurrence_shuf_file: "m1_cooccurrence_shuf.bin"

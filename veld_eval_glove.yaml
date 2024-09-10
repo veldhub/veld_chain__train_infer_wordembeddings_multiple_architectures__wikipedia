@@ -1,0 +1,20 @@
+x-veld:
+  chain:
+
+services:
+  veld_eval_fasttext:
+    extends:
+      file: ./veld_code_14_we_evaluation/veld_eval_fasttext.yaml
+      service: veld_eval_fasttext
+    volumes:
+      - ./data_local/models/fasttext/m1/:/veld/input/1/:z
+      - ./veld_data_10_we_evaluation/evaluation_gold_data/lowercase/:/veld/input/2/:z
+      - ./veld_data_10_we_evaluation/evaluation_results/:/veld/output/1/:z
+      - ./veld_data_10_we_evaluation/evaluation_results/logs/fasttext/:/veld/output/2:z
+    environment:
+      in_model_file: m1.bin
+      in_model_metadata_file: veld.yaml
+      in_eval_gold_data_file: eval_data_lowercase.yaml
+      out_eval_summary_file: summary.yaml
+      out_eval_log_file: m1.txt
+
