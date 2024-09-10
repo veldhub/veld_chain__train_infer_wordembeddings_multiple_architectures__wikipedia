@@ -12,8 +12,8 @@ services:
     environment:
       in_train_data_file: "de_wiki_sample.txt"
       model_id: "m1"
-      epochs: 3
-      vector_size: 200
+      epochs: 100
+      vector_size: 300
       window: 3
-      min_count: 10
+      min_count: 3
 
