@@ -7,11 +7,11 @@ services:
       file: ./veld_code_12_fasttext/veld_train.yaml
       service: veld_train 
     volumes:
-      - ./veld_data_18_amc_we_training_data/data/test/:/veld/input/:z
-      - ./veld_data_8_fasttext_models/data/test/:/veld/output/:z
+      - ./data_local/training_data/extracted__transformed_to_txt__lowercased__removed_punctuation/:/veld/input/:z
+      - ./data_local/models/fasttext/m1/:/veld/output/:z
     environment:
-      in_train_data_file: test.txt
-      out_model_file: test.bin
-      vector_size: 100
+      in_train_data_file: "de_wiki_sample.txt"
+      model_id: "m1"
+      vector_size: 200
       epochs: 10
 

@@ -7,6 +7,6 @@ services:
       file: ./veld_code_12_fasttext/veld_jupyter_notebook.yaml
       service: veld_jupyter_notebook
     volumes:
-      - ./veld_data_18_amc_we_training_data/:/veld/data/veld_data_18_amc_we_training_data:z
-      - ./veld_data_8_fasttext_models/:/veld/data/veld_data_8_fasttext_models:z
+      - ./data_local/training_data/:/veld/storage/training_data/:z
+      - ./data_local/models/fasttext/:/veld/storage/models:z
 
