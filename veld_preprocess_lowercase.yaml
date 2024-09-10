@@ -7,10 +7,10 @@ services:
       file: ./veld_code_19_we_preprocessing/veld_preprocess_lowercase.yaml
       service: veld_preprocess_lowercase
     volumes:
-      - ./data_local/training_data/sample_transformed/:/veld/input/:z
-      - ./data_local/training_data/sample_transformed_lowercased/:/veld/output/:z
+      - ./data_local/training_data/extracted__transformed_to_txt/:/veld/input/:z
+      - ./data_local/training_data/extracted__transformed_to_txt__lowercased/:/veld/output/:z
     environment:
       in_txt_file: "de_wiki_sample.txt"
       out_txt_file: "de_wiki_sample.txt"
-      out_data_description: "german wikipedia sample lowercased"
+      out_data_description: "sample wikipedia, single txt, lowercased"
 
