@@ -8,11 +8,14 @@ services:
       service: veld_transform_wiki_json_to_txt
     volumes:
       - ./data_local/training_data/extracted/veld_data_20_wikipedia_de_sample_extracted/:/veld/input/:z
-      - ./data_local/training_data/extracted__transformed_to_txt/:/veld/output/:z
+      - ./data_local/training_data/extracted__transformed_to_txt_no_sentence_split/:/veld/output/:z
     environment:
       in_json_folder: "data"
       out_txt_file: "de_wiki_sample.txt"
-      out_data_description: "sample wikipedia, transformed from json files into one txt file"
+      out_data_description: "sample wikipedia, transformed from json files into one txt file, each
+        json file's content persisted in a single line."
+      sample_size_percentage: 100
+      set_split_sentences: false
       cpu_count: 14
       sample_random_seed: 42
       info_interval: 10
