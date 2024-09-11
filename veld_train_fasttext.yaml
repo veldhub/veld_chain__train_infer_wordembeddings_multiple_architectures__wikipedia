@@ -12,6 +12,7 @@ services:
     environment:
       in_train_data_file: "de_wiki_sample.txt"
       model_id: "m1"
+      model_description: "fasttext test model"
       vector_size: 200
-      epochs: 10
+      epochs: 100
 
