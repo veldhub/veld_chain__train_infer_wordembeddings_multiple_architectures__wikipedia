@@ -7,12 +7,12 @@ services:
       file: ./veld_code_19_we_preprocessing/veld_preprocess_remove_punctuation.yaml
       service: veld_preprocess_remove_punctuation
     volumes:
-      - ./data_local/training_data/extracted__txt_sentence_per_line__lowercased/:/veld/input/:z
-      - ./data_local/training_data/extracted__txt_sentence_per_line__lowercased__removed_punctuation/:/veld/output/:z
+      - ./veld_data_18_amc_we_training_data/data/203_vert_rftt_inhalt_nodup__uniq__stripped__sampled__lowercased/:/veld/input/:z
+      - ./veld_data_18_amc_we_training_data/data/203_vert_rftt_inhalt_nodup__uniq__stripped__sampled__lowercased__punctuation_removed/:/veld/output/:z
     environment:
-      in_txt_file: "de_wiki_sample.txt"
-      out_txt_file: "de_wiki_sample.txt"
-      out_data_description: "sample wikipedia, single txt, removed punctuation"
+      in_txt_file: "data.txt"
+      out_txt_file: "data.txt"
+      out_data_description: "sample amc, uniq, stripped, sampled, lowercased, punctuation removed."
       cpu_count: 14
       info_interval: 10
 
