@@ -12,5 +12,5 @@ services:
     environment:
       in_file: "data.txt"
       out_file: "data.txt"
-      percentage_sample: 1
+      percentage_sample: 10
 
