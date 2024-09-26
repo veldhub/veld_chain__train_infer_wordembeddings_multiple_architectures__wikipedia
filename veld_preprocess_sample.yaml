@@ -12,6 +12,7 @@ services:
     environment:
       in_file: "data.txt"
       out_file: "data.txt"
+      out_data_description: "10% of AMC"
       cpu_count: 14
       percentage_sample: 10
       sample_random_seed: 42
