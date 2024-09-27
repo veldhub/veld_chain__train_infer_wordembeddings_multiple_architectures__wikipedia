@@ -16,5 +16,5 @@ services:
       cpu_count: 14
       percentage_sample: 10
       sample_random_seed: 42
-      buffer_segments: 10
+      buffer_segments: 100
 
