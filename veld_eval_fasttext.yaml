@@ -2,20 +2,6 @@ x-veld:
   chain:
 
 services:
-  veld_train_fasttext:
-    extends:
-      file: ./veld_code_12_fasttext/veld_train.yaml
-      service: veld_train 
-    volumes:
-      - ./data_local/training_data/extracted__txt_sentence_per_line__lowercased__removed_punctuation/:/veld/input/:z
-      - ./data_local/models/fasttext/m1/:/veld/output/:z
-    environment:
-      in_train_data_file: "de_wiki_sample.txt"
-      out_model_file: "m1.bin"
-      model_description: "test training"
-      vector_size: 200
-      epochs: 10
-
   veld_eval_fasttext:
     extends:
       file: ./veld_code_14_we_evaluation/veld_eval_fasttext.yaml
