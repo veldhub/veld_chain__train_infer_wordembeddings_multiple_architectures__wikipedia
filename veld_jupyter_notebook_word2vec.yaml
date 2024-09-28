@@ -7,6 +7,6 @@ services:
       file: ./veld_code_13_word2vec/veld_jupyter_notebook.yaml
       service: veld_jupyter_notebook
     volumes:
-      - ./data_local/training_data/:/veld/storage/train_data/:z
-      - ./data_local/models/word2vec/:/veld/storage/models/:z
+      - ./veld_data_18_amc_we_training_data/:/veld/storage/veld_data_18_amc_we_training_data/:z
+      - ./veld_data_11_word2vec_models/:/veld/storage/veld_data_11_word2vec_models/:z
 
