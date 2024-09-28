@@ -31,7 +31,7 @@ services:
       in_2_eval_gold_data_file: "eval_data_lowercase.yaml"
       out_1_eval_summary_file: "summary.yaml"
       out_2_eval_log_file: "m3.txt"
-    depends_on:
-      veld_train_word2vec:
-        condition: service_completed_successfully
+#    depends_on:
+#      veld_train_word2vec:
+#        condition: service_completed_successfully
 
