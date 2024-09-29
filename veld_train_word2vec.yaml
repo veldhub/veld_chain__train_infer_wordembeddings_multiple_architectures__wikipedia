@@ -8,11 +8,11 @@ services:
       service: veld_train 
     volumes:
       - ./veld_data_18_amc_we_training_data/data/203_vert_rftt_inhalt_nodup__uniq__stripped__sampled__lowercased__punctuation_removed__cleaned/:/veld/input/:z
-      - ./veld_data_11_word2vec_models/data/m3/:/veld/output/:z
+      - ./veld_data_11_word2vec_models/data/m4/:/veld/output/:z
     environment:
       in_train_data_file: "data.txt"
-      out_model_file: "m3.bin"
+      out_model_file: "m4.bin"
       model_description: "10% AMC model"
-      epochs: 10
+      epochs: 50
       vector_size: 200
 
