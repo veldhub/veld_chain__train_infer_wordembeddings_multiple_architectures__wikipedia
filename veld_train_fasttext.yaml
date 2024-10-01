@@ -7,12 +7,12 @@ services:
       file: ./veld_code_12_fasttext/veld_train.yaml
       service: veld_train 
     volumes:
-      - ./data_local/training_data/extracted__txt_sentence_per_line__lowercased__removed_punctuation/:/veld/input/:z
-      - ./data_local/models/fasttext/m1/:/veld/output/:z
+      - ./veld_data_18_amc_we_training_data/data/203_vert_rftt_inhalt_nodup__uniq__stripped__sampled__lowercased__punctuation_removed__cleaned/:/veld/input/:z
+      - ./veld_data_8_fasttext_models/data/m4/:/veld/output/:z
     environment:
-      in_train_data_file: "de_wiki_sample.txt"
-      out_model_file: "m1.bin"
-      model_description: "test training"
+      in_train_data_file: "data.txt"
+      out_model_file: "m4.bin"
+      model_description: "10% AMC model"
       vector_size: 200
-      epochs: 10
+      epochs: 50
 
