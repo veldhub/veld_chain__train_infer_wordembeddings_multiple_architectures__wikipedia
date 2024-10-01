@@ -6,7 +6,9 @@ services:
     extends:
       file: ./veld_code_17_glove/veld_jupyter_notebook.yaml
       service: veld_jupyter_notebook
+    ports:
+      - 8890:8888
     volumes:
-      - ./data_local/training_data/:/veld/storage/training_data/:z
-      - ./data_local/models/glove/:/veld/storage/models/:z
+      - ./veld_data_18_amc_we_training_data/:/veld/storage/veld_data_18_amc_we_training_data/:z
+      - ./veld_data_17_glove_models/:/veld/storage/veld_data_17_glove_models/:z
 
