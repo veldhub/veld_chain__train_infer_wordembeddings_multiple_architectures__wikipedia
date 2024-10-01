@@ -6,7 +6,9 @@ services:
     extends:
       file: ./veld_code_12_fasttext/veld_jupyter_notebook.yaml
       service: veld_jupyter_notebook
+    ports:
+      - 8889:8888
     volumes:
-      - ./data_local/training_data/:/veld/storage/training_data/:z
-      - ./data_local/models/fasttext/:/veld/storage/models:z
+      - ./veld_data_18_amc_we_training_data/:/veld/storage/veld_data_18_amc_we_training_data/:z
+      - ./veld_data_8_fasttext_models/:/veld/storage/veld_data_8_fasttext_models/:z
 
