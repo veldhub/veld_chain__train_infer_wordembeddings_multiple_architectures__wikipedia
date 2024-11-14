@@ -15,4 +15,5 @@ services:
       model_description: "100% AMC model"
       vector_size: 200
       epochs: 10
+      window_size: 10
 
