@@ -13,12 +13,6 @@
 [submodule "veld_code_19_we_preprocessing"]
 	path = veld_code_19_we_preprocessing
 	url = https://github.com/acdh-oeaw/veld_code_19_we_preprocessing.git
-[submodule "veld_data_17_glove_models"]
-	path = veld_data_17_glove_models
-	url = https://gitlab.oeaw.ac.at/acdh-ch/nlp/veld_data_17_glove_models.git
-[submodule "veld_data_11_word2vec_models"]
-	path = veld_data_11_word2vec_models
-	url = https://gitlab.oeaw.ac.at/acdh-ch/nlp/veld_data_11_word2vec_models.git
 [submodule "veld_data_fasttext_models"]
 	path = veld_data_fasttext_models
 	url = https://github.com/acdh-oeaw/veld_data_fasttext_models.git
@@ -28,3 +22,9 @@
 [submodule "veld_data_we_evaluation"]
 	path = veld_data_we_evaluation
 	url = https://github.com/acdh-oeaw/veld_data_we_evaluation.git
+[submodule "veld_data_word2vec_models"]
+	path = veld_data_word2vec_models
+	url = https://github.com/acdh-oeaw/veld_data_word2vec_models.git
+[submodule "veld_data_glove_models"]
+	path = veld_data_glove_models
+	url = https://github.com/acdh-oeaw/veld_data_glove_models.git
