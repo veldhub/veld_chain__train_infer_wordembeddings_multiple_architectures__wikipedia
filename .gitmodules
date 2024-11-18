@@ -16,9 +16,6 @@
 [submodule "veld_data_10_we_evaluation"]
 	path = veld_data_10_we_evaluation
 	url = https://github.com/acdh-oeaw/veld_data_10_we_evaluation.git
-[submodule "veld_data_18_amc_we_training_data"]
-	path = veld_data_18_amc_we_training_data
-	url = https://gitlab.oeaw.ac.at/acdh-ch/nlp/veld_data_18_amc_we_training_data.git
 [submodule "veld_data_17_glove_models"]
 	path = veld_data_17_glove_models
 	url = https://gitlab.oeaw.ac.at/acdh-ch/nlp/veld_data_17_glove_models.git
@@ -28,3 +25,6 @@
 [submodule "veld_data_fasttext_models"]
 	path = veld_data_fasttext_models
 	url = https://github.com/acdh-oeaw/veld_data_fasttext_models.git
+[submodule "veld_data_amc_we_training_data"]
+	path = veld_data_amc_we_training_data
+	url = https://github.com/acdh-oeaw/veld_data_amc_we_training_data
