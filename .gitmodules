@@ -28,9 +28,6 @@
 [submodule "veld_data_8_fasttext_models"]
 	path = veld_data_8_fasttext_models
 	url = https://gitlab.oeaw.ac.at/acdh-ch/nlp/veld_data_8_fasttext_models.git
-[submodule "code/bert_embeddings"]
-	path = code/bert_embeddings
-	url = https://github.com/acdh-oeaw/bert_embeddings.git
-[submodule "data/bert_amc_embeddings_db"]
-	path = data/bert_amc_embeddings_db
-	url = https://gitlab.oeaw.ac.at/acdh-ch/nlp/bert_amc_embeddings_db
+[submodule "veld_data_fasttext_models"]
+	path = veld_data_fasttext_models
+	url = https://github.com/acdh-oeaw/veld_data_fasttext_models.git
