@@ -25,3 +25,6 @@
 [submodule "data/veld_data__wordembeddings_evaluation"]
 	path = data/veld_data__wordembeddings_evaluation
 	url = https://github.com/veldhub/veld_data__wordembeddings_evaluation.git
+[submodule "code/veld_code__wordembeddings_preprocessing"]
+	path = code/veld_code__wordembeddings_preprocessing
+	url = https://github.com/veldhub/veld_code__wordembeddings_preprocessing.git
