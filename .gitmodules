@@ -1,30 +1,18 @@
 [submodule "code/veld_code__fasttext"]
 	path = code/veld_code__fasttext
 	url = https://github.com/veldhub/veld_code__fasttext.git
-[submodule "data/veld_data__fasttext_models"]
-	path = data/veld_data__fasttext_models
-	url = https://github.com/veldhub/veld_data__fasttext_models.git
 [submodule "code/veld_code__word2vec"]
 	path = code/veld_code__word2vec
 	url = https://github.com/veldhub/veld_code__word2vec.git
-[submodule "data/veld_data__word2vec_models"]
-	path = data/veld_data__word2vec_models
-	url = https://github.com/veldhub/veld_data__word2vec_models.git
 [submodule "code/veld_code__wordembeddings_evaluation"]
 	path = code/veld_code__wordembeddings_evaluation
 	url = https://github.com/veldhub/veld_code__wordembeddings_evaluation.git
 [submodule "code/veld_code__glove"]
 	path = code/veld_code__glove
 	url = https://github.com/veldhub/veld_code__glove.git
-[submodule "data/veld_data__glove_models"]
-	path = data/veld_data__glove_models
-	url = https://github.com/veldhub/veld_data__glove_models.git
-[submodule "data/veld_data__amc_we_training_data"]
-	path = data/veld_data__amc_we_training_data
-	url = https://github.com/veldhub/veld_data__amc_we_training_data.git
-[submodule "data/veld_data__wordembeddings_evaluation"]
-	path = data/veld_data__wordembeddings_evaluation
-	url = https://github.com/veldhub/veld_data__wordembeddings_evaluation.git
 [submodule "code/veld_code__wordembeddings_preprocessing"]
 	path = code/veld_code__wordembeddings_preprocessing
 	url = https://github.com/veldhub/veld_code__wordembeddings_preprocessing.git
+[submodule "code/veld_code__wikipedia_nlp_preprocessing"]
+	path = code/veld_code__wikipedia_nlp_preprocessing
+	url = https://github.com/veldhub/veld_code__wikipedia_nlp_preprocessing.git
