@@ -1,30 +1,27 @@
-[submodule "veld_code_12_fasttext"]
-	path = veld_code_12_fasttext
-	url = https://github.com/acdh-oeaw/veld_code_12_fasttext.git
-[submodule "veld_code_13_word2vec"]
-	path = veld_code_13_word2vec
-	url = https://github.com/acdh-oeaw/veld_code_13_word2vec.git
-[submodule "veld_code_14_we_evaluation"]
-	path = veld_code_14_we_evaluation
-	url = https://github.com/acdh-oeaw/veld_code_14_we_evaluation.git
-[submodule "veld_code_17_glove"]
-	path = veld_code_17_glove
-	url = https://github.com/acdh-oeaw/veld_code_17_glove.git
-[submodule "veld_code_19_we_preprocessing"]
-	path = veld_code_19_we_preprocessing
-	url = https://github.com/acdh-oeaw/veld_code_19_we_preprocessing.git
-[submodule "veld_data_fasttext_models"]
-	path = veld_data_fasttext_models
-	url = https://github.com/acdh-oeaw/veld_data_fasttext_models.git
-[submodule "veld_data_amc_we_training_data"]
-	path = veld_data_amc_we_training_data
-	url = https://github.com/acdh-oeaw/veld_data_amc_we_training_data
-[submodule "veld_data_we_evaluation"]
-	path = veld_data_we_evaluation
-	url = https://github.com/acdh-oeaw/veld_data_we_evaluation.git
-[submodule "veld_data_word2vec_models"]
-	path = veld_data_word2vec_models
-	url = https://github.com/acdh-oeaw/veld_data_word2vec_models.git
-[submodule "veld_data_glove_models"]
-	path = veld_data_glove_models
-	url = https://github.com/acdh-oeaw/veld_data_glove_models.git
+[submodule "code/veld_code__fasttext"]
+	path = code/veld_code__fasttext
+	url = https://github.com/veldhub/veld_code__fasttext.git
+[submodule "data/veld_data__fasttext_models"]
+	path = data/veld_data__fasttext_models
+	url = https://github.com/veldhub/veld_data__fasttext_models.git
+[submodule "code/veld_code__word2vec"]
+	path = code/veld_code__word2vec
+	url = https://github.com/veldhub/veld_code__word2vec.git
+[submodule "data/veld_data__word2vec_models"]
+	path = data/veld_data__word2vec_models
+	url = https://github.com/veldhub/veld_data__word2vec_models.git
+[submodule "code/veld_code__wordembeddings_evaluation"]
+	path = code/veld_code__wordembeddings_evaluation
+	url = https://github.com/veldhub/veld_code__wordembeddings_evaluation.git
+[submodule "code/veld_code__glove"]
+	path = code/veld_code__glove
+	url = https://github.com/veldhub/veld_code__glove.git
+[submodule "data/veld_data__glove_models"]
+	path = data/veld_data__glove_models
+	url = https://github.com/veldhub/veld_data__glove_models.git
+[submodule "data/veld_data__amc_we_training_data"]
+	path = data/veld_data__amc_we_training_data
+	url = https://github.com/veldhub/veld_data__amc_we_training_data.git
+[submodule "data/veld_data__wordembeddings_evaluation"]
+	path = data/veld_data__wordembeddings_evaluation
+	url = https://github.com/veldhub/veld_data__wordembeddings_evaluation.git
