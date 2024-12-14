@@ -4,11 +4,11 @@ x-veld:
 services:
   veld_train_word2vec:
     extends:
-      file: ./veld_code_13_word2vec/veld_train.yaml
+      file: ./code/veld_code__word2vec/veld_train.yaml
       service: veld_train 
     volumes:
-      - ./veld_data_18_amc_we_training_data/data/203_vert_rftt_inhalt_nodup__uniq__stripped__lowercased__punctuation_removed__cleaned/:/veld/input/:z
-      - ./veld_data_11_word2vec_models/data/m8/:/veld/output/:z
+      - ./data/veld_data__amc_we_training_data/data/203_vert_rftt_inhalt_nodup__uniq__stripped__lowercased__punctuation_removed__cleaned/:/veld/input/:z
+      - ./data/veld_data__word2vec_models/m8/:/veld/output/:z
     environment:
       in_train_data_file: "data.txt"
       out_model_file: "m8.bin"

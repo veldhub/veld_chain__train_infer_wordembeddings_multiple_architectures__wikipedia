@@ -4,11 +4,11 @@ x-veld:
 services:
   veld_train_glove:
     extends:
-      file: ./veld_code_17_glove/veld_train.yaml
+      file: ./code/veld_code__glove/veld_train.yaml
       service: veld_train 
     volumes:
-      - ./veld_data_18_amc_we_training_data/data/203_vert_rftt_inhalt_nodup__uniq__stripped__sampled__lowercased__punctuation_removed__cleaned/:/veld/input/:z
-      - ./veld_data_17_glove_models/data/m4/:/veld/output/:z
+      - ./data/veld_data__amc_we_training_data/data/203_vert_rftt_inhalt_nodup__uniq__stripped__sampled__lowercased__punctuation_removed__cleaned/:/veld/input/:z
+      - ./data/veld_data__glove_models/data/m4/:/veld/output/:z
     environment:
       in_corpus_file: "data.txt"
       out_vocab_file: "m4_vocab.txt"

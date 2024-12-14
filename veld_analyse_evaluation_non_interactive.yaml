@@ -4,11 +4,11 @@ x-veld:
 services:
   veld_analyse_evaluation_non_interactive:
     extends:
-      file: ./veld_code_14_we_evaluation/veld_analyse_evaluation_non_interactive.yaml
+      file: ./code/veld_code__wordembeddings_evaluation/veld_analyse_evaluation_non_interactive.yaml
       service: veld_analyse_evaluation
     volumes:
-      - ./veld_data_10_we_evaluation/evaluation_results/:/veld/input/:z
-      - ./veld_data_10_we_evaluation/evaluation_results/:/veld/output/:z
+      - ./data/veld_data__wordembeddings_evaluation/evaluation_results/:/veld/input/:z
+      - ./data/veld_data__wordembeddings_evaluation/evaluation_results/:/veld/output/:z
     environment:
       in_evaluation_summary_file: "summary.yaml"
       out_visualization_html_file: "summary_visualized.html"

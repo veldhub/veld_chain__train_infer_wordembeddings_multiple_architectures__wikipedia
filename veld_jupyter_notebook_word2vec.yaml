@@ -4,11 +4,11 @@ x-veld:
 services:
   veld_jupyter_notebook_word2vec:
     extends:
-      file: ./veld_code_13_word2vec/veld_jupyter_notebook.yaml
+      file: ./code/veld_code__word2vec/veld_jupyter_notebook.yaml
       service: veld_jupyter_notebook
     ports:
       - 8891:8888
     volumes:
-      - ./veld_data_18_amc_we_training_data/:/veld/storage/veld_data_18_amc_we_training_data/:z
-      - ./veld_data_11_word2vec_models/:/veld/storage/veld_data_11_word2vec_models/:z
+      - ./data/veld_data__amc_we_training_data/:/veld/storage/data/veld_data__amc_we_training_data/:z
+      - ./data/veld_data__word2vec_models/:/veld/storag./data/veld_data__word2vec_models/:z
 

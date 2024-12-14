@@ -1,10 +1,10 @@
-x-veld:
+l-veld:
   chain:
 
 services:
   veld_train_fasttext:
     extends:
-      file: ./veld_code_12_fasttext/veld_train.yaml
+      file: ./code/veld_code__fasttext/veld_train.yaml
       service: veld_train 
     volumes:
       - ./veld_data_amc_we_training_data/203_vert_rftt_inhalt_nodup__uniq__stripped__lowercased__punctuation_removed__cleaned/:/veld/input/:z
