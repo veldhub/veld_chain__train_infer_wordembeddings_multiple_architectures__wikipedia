@@ -1,5 +1,7 @@
 l-veld:
   chain:
+    description: "training a fasttext model on wikipediaa"
+    topics: "NLP"
 
 services:
   veld_train_fasttext:

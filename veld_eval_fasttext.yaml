@@ -1,5 +1,7 @@
 x-veld:
   chain:
+    description: "evaluate fasttext model against evaluation gold data"
+    topics: "NLP"
 
 services:
   veld_eval_fasttext:

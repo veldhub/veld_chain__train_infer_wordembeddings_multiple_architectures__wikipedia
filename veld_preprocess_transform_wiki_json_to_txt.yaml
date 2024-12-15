@@ -1,6 +1,6 @@
 x-veld:
   chain:
-    description: "transforming wikipedia raw jsons to a single txt file."
+    description: "transforming wikipedia jsons to a single txt file."
     topics:
       - "NLP"
       - "Machine Learning"
