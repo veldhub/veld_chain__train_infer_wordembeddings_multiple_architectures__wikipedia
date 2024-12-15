@@ -8,7 +8,7 @@ x-veld:
 
 services:
 
-  veld_preprocess_transform_wiki_json_to_txt__articles:
+  veld_preprocess_transform_wiki_json_to_txt_articles:
     extends:
       file: ./code/veld_code__wikipedia_nlp_preprocessing/veld_transform_wiki_json_to_txt.yaml
       service: veld_transform_wiki_json_to_txt
@@ -24,12 +24,12 @@ services:
       cpu_count: 14
       buffer_segments: 10
 
-  veld_preprocess_transform_wiki_json_to_txt__sentences:
+  veld_preprocess_transform_wiki_json_to_txt_entences:
     extends:
       file: ./code/veld_code__wikipedia_nlp_preprocessing/veld_transform_wiki_json_to_txt.yaml
       service: veld_transform_wiki_json_to_txt
     volumes:
-      - ./data/training_data/extracted/:/veld/input/:z
+      - ./data/training_data/extracted/data/:/veld/input/:z
       - ./data/training_data/extracted__txt_sentence_per_line/:/veld/output/:z
     environment:
       out_txt_file: "data.txt"
@@ -38,8 +38,8 @@ services:
       set_split_sentences: true
       sample_size_percentage: 10
       cpu_count: 14
-      buffer_segments: 100
+      buffer_segments: 10
     depends_on:
-      veld_preprocess_transform_wiki_json_to_txt__articles:
+      veld_preprocess_transform_wiki_json_to_txt_articles:
         condition: service_completed_successfully
 
