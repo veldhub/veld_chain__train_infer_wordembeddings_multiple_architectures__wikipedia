@@ -9,10 +9,10 @@ x-veld:
 services:
   veld_preprocess_download_and_extract:
     extends:
-      file: ./veld_code_20_wikipedia_nlp_preprocessing/veld_download_and_extract.yaml
+      file: ./code/veld_code__wikipedia_nlp_preprocessing/veld_download_and_extract.yaml
       service: veld_download_and_extract
     volumes:
-      - ./data_local/training_data/extracted/:/veld/output/:z
+      - ./data/training_data/extracted/:/veld/output/:z
     environment:
       wikipedia_dump_url: https://dumps.wikimedia.org/dewiki/latest/dewiki-latest-pages-articles.xml.bz2
 
