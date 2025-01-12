@@ -1,6 +1,6 @@
 # veld_chain__train_infer_wordembeddings_multiple_architectures__wikipedia
 
-This repo contains several chain velds relating to training and evaluating static word embedding
+This repo contains several chain velds relating to training and evaluation of static word embedding
 architectures on wikipedia data. 
 
 It mainly acts as a public demonstration mirroring this project setup on internal AMC data: 
